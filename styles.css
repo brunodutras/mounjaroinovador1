@@ -84,6 +84,22 @@ body {
     margin-right: auto;
 }
 
+.logo-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hero-logo {
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+    transform: scale(1.05);
+}
+
 .offer-banner {
     background: #ff4757;
     color: white;
