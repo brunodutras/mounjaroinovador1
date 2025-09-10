@@ -488,7 +488,7 @@ body {
 /* Final CTA */
 .final-cta {
     padding: 60px 0;
-    background: #4a7c59;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
     text-align: center;
 }
@@ -496,6 +496,8 @@ body {
 .final-cta h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #ff6b35;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .cta-subtitle {
