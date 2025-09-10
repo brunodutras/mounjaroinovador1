@@ -180,6 +180,8 @@ body {
 .how-it-works {
     padding: 60px 0;
     background: #f8f9fa;
+    position: relative;
+    z-index: 1;
 }
 
 .how-it-works h2 {
@@ -334,6 +336,8 @@ body {
 .testimonials {
     padding: 60px 0;
     background: #f8f9fa;
+    position: relative;
+    z-index: 1;
 }
 
 .testimonials h2 {
@@ -444,6 +448,8 @@ body {
     background: #f8f9fa;
     padding: 40px;
     border-radius: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .guarantee-icon {
