@@ -177,7 +177,7 @@ body {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 40px;
     align-items: start;
@@ -511,6 +511,7 @@ body {
         grid-template-columns: 1fr;
         gap: 20px;
         margin-top: 30px;
+        padding: 0 5px;
     }
     
     .benefit-item {
@@ -567,6 +568,8 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 0 10px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .hero-title {
@@ -598,6 +601,14 @@ body {
     
     .benefit-item {
         padding: 20px 15px;
+        margin: 0 5px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+        padding: 0;
     }
     
     .pricing-card {
