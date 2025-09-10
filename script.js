@@ -29,37 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Efeito de contagem regressiva (simulado)
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const endTime = now + (48 * 60 * 60 * 1000); // 48 horas a partir de agora
-        
-        setInterval(function() {
-            const currentTime = new Date().getTime();
-            const timeLeft = endTime - currentTime;
-            
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-            
-            // Atualizar elementos de urgência (se existirem)
-            const urgencyElements = document.querySelectorAll('.header-banner, .offer-banner, .urgency-banner');
-            urgencyElements.forEach(el => {
-                if (el.textContent.includes('Últimas 48h') || el.textContent.includes('ÚLTIMAS HORAS')) {
-                    el.textContent = `OFERTA EXPIRA EM: ${hours}h ${minutes}m ${seconds}s`;
-                }
-            });
-            
-            if (timeLeft < 0) {
-                urgencyElements.forEach(el => {
-                    el.textContent = 'OFERTA LIMITADA - Últimas 48h!';
-                });
-            }
-        }, 1000);
-    }
-    
-    // Iniciar countdown após 3 segundos
-    setTimeout(updateCountdown, 3000);
+    // Countdown removido para manter layout original
 
     // Adicionar efeito de hover nos botões
     const buttons = document.querySelectorAll('.cta-button');
