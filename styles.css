@@ -12,6 +12,7 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-top: 60px;
 }
 
 .container {
@@ -31,9 +32,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     overflow: hidden;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .header-banner::before {
@@ -520,9 +525,13 @@ body {
     }
     
     .header-banner {
-        font-size: 14px;
-        padding: 12px 0;
-    }
+         font-size: 14px;
+         padding: 12px 0;
+     }
+     
+     body {
+         padding-top: 50px;
+     }
     
     .cta-button {
         font-size: 1rem;
@@ -619,9 +628,13 @@ body {
     }
     
     .header-banner {
-        font-size: 12px;
-        padding: 10px 5px;
-    }
+         font-size: 12px;
+         padding: 10px 5px;
+     }
+     
+     body {
+         padding-top: 45px;
+     }
     
     .cta-button {
         font-size: 0.9rem;
